@@ -3,7 +3,7 @@ var app = app || {};
 app.router = Backbone.Router.extend({
     
     langRoutes : {
-        "_link home" : {"en":"home","es": "inicio" },
+        "_link home" : {"es": "inicio" },
     },
 
     /* define the route and function maps for this router */

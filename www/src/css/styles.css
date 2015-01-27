@@ -15,12 +15,17 @@
 @orange : #ff9000;
 @white :#fff;
 
+
+@black1: #393431;
+@red1 : #ca3024;
+
 html, body{ height:100%;}
 body {
 	.roboto();
 	color:@grey;
 	font-size:16px;
 	line-height:24px;
+	background-color: @black1 !important;
 }
 
 p,span,div,table{
@@ -155,3 +160,68 @@ input[placeholder]{
 .text_bold{ .roboto(bold);}
 
 .uppercase{ text-transform: uppercase;}
+
+header{
+	.container-fluid{
+		background: #23211F url('../img/header-bg.jpg') no-repeat;
+		width: 100%;
+		background-position: 50% top;
+		min-width: 990px;
+		
+	}
+	
+	.logo{
+		width: 990px;
+		display: block;
+		margin: auto;
+		
+		img{
+			padding-top: 10px;
+			padding-bottom: 7px;
+		}
+	}
+}
+
+nav{
+	width: 990px;
+	margin: auto;
+	background-color: #232120;
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1001;
+	li{
+		float: left;
+		margin-left: 25px;
+	}
+}
+
+#map{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 36px;
+	top: 127px;
+	z-index: 1000;
+	min-width: 990px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	background: @red1;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 990px;
+	z-index: 1001;
+}

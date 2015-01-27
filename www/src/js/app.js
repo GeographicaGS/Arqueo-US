@@ -73,6 +73,7 @@ app.ini = function(){
 
     //Backbone.history.start();root: "/public/search/"
     Backbone.history.start({pushState: true,root: this.basePath });
+    new app.view.Map();
 
 };
 
