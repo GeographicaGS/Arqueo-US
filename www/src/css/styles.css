@@ -163,7 +163,7 @@ input[placeholder]{
 
 header{
 	.container-fluid{
-		background: #23211F url('../img/header-bg.jpg') no-repeat;
+		background: #23211F; /*url('../img/header-bg.jpg') no-repeat;*/
 		width: 100%;
 		background-position: 50% top;
 		min-width: 990px;
@@ -190,9 +190,6 @@ nav{
 	line-height: 41px;
 	font-size: 14px;
 	color: white;
-	position: absolute;
-	left: 0;
-	right: 0;
 	z-index: 1001;
 	li{
 		float: left;
@@ -205,7 +202,7 @@ nav{
 	right: 0;
 	left: 0;
 	bottom: 36px;
-	top: 127px;
+	top: 169px;
 	z-index: 1000;
 	min-width: 990px;
 }

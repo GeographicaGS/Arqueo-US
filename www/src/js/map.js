@@ -1,12 +1,13 @@
 Map = {
 	
 	layerIndicador:null,
-	iniLat: 37.36455,
-	iniLng: -4.57645,	
-	iniZoom: 8,
+	iniLat: 40.5513449746,
+	iniLng: -3.48050641189,	
+	iniZoom: 6,
 	__map:null,
 	__layersIndicador:[],
 	__layersMapBase:[],
+	markers: [],
 	
 	initialize: function(){
 //			// center the map
@@ -36,4 +37,32 @@ Map = {
 	getMap: function() {
 		return this.__map;
 	},
+
+	loadDepositPoints: function() {
+		var that = this;
+        $.ajax({
+            url : '/api/deposit',
+            type: 'GET',
+            success: function(data) {
+                
+                function onEachFeature(feature, layer) {
+                    // bind a popup with history's basic info
+                    if (feature.properties && feature.properties.name) {
+                        layer.bindPopup(feature.properties.name+'');
+                    }
+                }
+
+                that.depositGeoJson = data.result;
+                that.depositLayer = L.geoJson(that.depositGeoJson, {
+                    pointToLayer: function (feature, latlng) {
+                        var marker = L.marker(latlng);
+                        that.markers[feature.properties.id] = marker;
+                        return marker;
+                    },
+                    onEachFeature: onEachFeature
+                });
+                that.depositLayer.addTo(Map.__map);
+            }
+        });
+	}
 }

@@ -2,6 +2,7 @@ app.view.Map = Backbone.View.extend({
     
     initialize: function() {
     	Map.initialize();
+        Map.loadDepositPoints();
 //    	this.render();
     },
     
