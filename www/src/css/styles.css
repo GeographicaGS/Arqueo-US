@@ -20,7 +20,7 @@
 @black1: #393431;
 @red1 : #ca3024;
 
-@footer_height: 82px;
+@footer_height: 65px;
 
 html, body{ height:100%; }
 body {
@@ -280,10 +280,25 @@ footer{
 	min-width: 990px;
 	z-index: 1001;
 
-	img {
-		width: 205px;
-		vertical-align: top;
-		margin-left: 5px;
+	p {
+		line-height: 1.5em;
+		margin-top: 0.5em;
+	}
+
+	.institutions {
+		text-align: right;
+
+		p {
+			margin: 0;
+			font-size: 0.8em;
+			line-height: 1em;
+		}
+
+		img {
+			width: 155px;
+			vertical-align: top;
+			margin-left: 5px;
+		}
 	}
 }
 
