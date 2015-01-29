@@ -5,6 +5,7 @@
 /* Color palette */
 @grey: #515155;
 @grey_verylight: #fafafa;
+@grey_text: #cfcfcf;
 @grey_light: #a2a2ac;
 @grey_light2: #e7e7ea;
 @grey_dark: #28282b;
@@ -227,7 +228,7 @@ nav{
 }
 
 main {
-	color: @white;
+	color: @grey_text;
 
 	h1 {
 		color: @white;
