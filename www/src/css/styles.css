@@ -182,7 +182,7 @@ input[placeholder]{
 
 header{
 	.container-fluid{
-		background: #23211F; /*url('../img/header-bg.jpg') no-repeat;*/
+		background: #23211F url('../img/header-bg.jpg') no-repeat;
 		width: 100%;
 		background-position: 50% top;
 		min-width: 990px;
@@ -193,11 +193,6 @@ header{
 		width: 990px;
 		display: block;
 		margin: auto;
-		
-		img{
-			padding-top: 10px;
-			padding-bottom: 7px;
-		}
 	}
 }
 
