@@ -13,6 +13,7 @@ deps.JS = {
 	}
 	,Core: {
 		src: [
+			"js/lib/fancybox/jquery.fancybox.js",
 			// Namespace
 			"js/namespace.js",
 			// Config file
@@ -25,11 +26,15 @@ deps.JS = {
 			"js/view/notfound_view.js",
 			"js/view/home_view.js",
 			"js/view/map_view.js",
+			"js/view/staff_view.js",
+			"js/view/publications_view.js",
 
 			// router
 			"js/router.js",
 			// app
 			"js/app.js",
+			"js/topics.js",
+			"js/gSLayerWMS.js",
 
 		],
 		desc: "Core library."

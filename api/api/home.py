@@ -7,6 +7,7 @@ from api import app
 from flask import jsonify,request
 from model.depositmodel import DepositModel
 import json
+import urllib2
 
 @app.route('/home/', methods=['GET'])
 def home():
@@ -25,3 +26,13 @@ def listDepositPoints():
 		item['properties'] = h_property
 		result.append(item)
 	return jsonify({'result': result})
+
+@app.route('/proxy', methods=['POST'])
+def proxy():
+    proxy_support = urllib2.ProxyHandler()
+    opener = urllib2.build_opener(proxy_support)
+    urllib2.install_opener(opener)
+    url = request.form.get('url')
+    html = urllib2.urlopen(url).read()
+        
+    return html

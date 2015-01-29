@@ -70,6 +70,7 @@ app.ini = function(){
     this.basePath = this.config.BASE_PATH + this.lang;
 
     this.$main = $("main");
+    this.$menu = $("nav ul");
 
     //Backbone.history.start();root: "/public/search/"
     Backbone.history.start({pushState: true,root: this.basePath });
@@ -93,7 +94,8 @@ app.events = {};
 _.extend(app.events , Backbone.Events);
 
 app.events.on("menu", function(id){
-   
+    app.$menu.find('li').removeClass('selected');
+    app.$menu.find('[data-menu='+id+']').closest('li').addClass('selected');
 });
 
 app.scrollTop = function(){

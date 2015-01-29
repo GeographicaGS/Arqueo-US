@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
         
-    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title><lang>Índice Elcano de Presencia Global - Administración</lang></title>
+    <title>APPE</title>
     <link rel='stylesheet' href='/css/main.min.css'>
         
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -24,29 +24,49 @@
   </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <a href="http://grupo.us.es/atlas" class="logo">
-                    <img src="/img/logo.png">
-                </a>
-                <nav>
-                <ul>
-                    <li>
-                        <a href="/<lang>lang</lang>/<lang>_link home</lang>" jslink><lang>Inicio</lang></a>
-                    </li>
-                    <li>
-                        <a href="/<lang>lang</lang>/<lang>_link home</lang>" jslink><lang>Proyecto</lang></a>
-                    </li>
-                </ul>
-                </nav>   
-            </div>  
-        </div>
-    </header>
-    <main></main>
-    <div id="map"></div>
+    <div class="page-wrap">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="http://grupo.us.es/atlas" class="logo">
+                        <img src="/img/logo.png">
+                    </a>
+                    <nav>
+                    <ul>
+                        <li data-menu="home" class="selected">
+                            <a href="/es/home" jslink><lang>Inicio</lang></a>
+                        </li>
+                        <li data-menu="staff">
+                            <a href="/es/staff" jslink><lang>Personal</lang></a>
+                        </li>
+                        <li data-menu="publications">
+                            <a href="/es/publications" jslink><lang>Publicaciones</lang></a>
+                        </li>
+                        <li data-menu="map">
+                            <a href="/es/map" jslink><lang>APPE</lang></a>
+                        </li>
+                    </ul>
+                    </nav>   
+                </div>  
+            </div>
+        </header>
+        <main></main>
+        <div id="map"></div>
+        <div id="container_feature_info"><lang>Cargando...</lang></div>
+    </div>
     <footer>
-        <lang>© 2014 Departamento de Prehistoria y Arqueología - Facultad de Geografía e Historia - Universidad de Sevilla&nbsp;María de Padilla s/n. 41004. Sevilla (Spain) | Tfno: (34) 954551411 | Fax: (34) 954559920</lang>
+        <div class="container">
+            <div class="col-md-8 col-sm-8">
+                <p>
+                <span><lang>Nuevas tecnologías aplicadas al estudio de la movilidad e intercambio: cuentas verdes y cerámica decorada con rellenos blancos del VI al II Milenio ane en la Península Ibérica desde una perspectiva multidisciplinar(HAR2012­34620) </lang></span>
+                <a href="mailto:codriozola@us.es" target="_blank">  codriozola@us.es</a>
+                (34)954551415
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <p>Financiado por: <img src="/img/minec.jpg"></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
