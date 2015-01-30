@@ -265,6 +265,10 @@ main {
 	top: 182px;
 	z-index: 1000;
 	min-width: 990px;
+
+	&.leaflet-container, .leaflet-container {
+		cursor: pointer;
+	}
 }
 
 footer{
